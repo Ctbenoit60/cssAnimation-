@@ -1,0 +1,31 @@
+@keyframes slideAnimation {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: calc(100% - 100px);
+  }
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: blue;
+  }
+  50% {
+    background-color: green;
+  }
+  75% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+.slider {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation: slideAnimation 4s linear infinite;
+}
